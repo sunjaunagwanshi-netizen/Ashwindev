@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://cdn.jsdelivr.net https://api.emailjs.com https://api.jsonbin.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data:;">
+<title>Ashwin | Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader"></div>
+<div class="bg">
+  <div class="orb o1" id="o1"></div>
+  <div class="orb o2" id="o2"></div>
+  <div class="orb o3" id="o3"></div>
+  <div class="orb o4" id="o4"></div>
+</div>
+<div id="cg"></div>
+<div class="toast" id="toast"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="ni">
+    <a href="#" class="logo" data-page="home">Ashwin <span>Dev</span></a>
+    <div class="tabs">
+      <button class="tab active" data-page="home">Home</button>
+      <button class="tab" data-page="pricing">Pricing</button>
+      <button class="tab" data-page="reviews">Reviews</button>
+    </div>
+    <button class="ncta" data-page="pricing">Hire Me 🚀</button>
+    <div class="ham" id="ham"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob" id="mob">
+  <button data-page="home" class="mi">Home</button>
+  <button data-page="pricing" class="mi">Pricing</button>
+  <button data-page="reviews" class="mi">Reviews</button>
+</div>
+
+<!-- HOME PAGE -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div>
+      <div class="hbadge rev"><span class="dot"></span>Available for Projects</div>
+      <h1 class="rev d1">I build websites<br>that <span class="grad">convert.</span></h1>
+      <p class="hsub rev d2">Creative web developer crafting fast, beautiful, and purposeful websites. Let's turn your vision into something remarkable.</p>
+      <div class="hbtns rev d3">
+        <a href="#contact" class="btn bp">Contact Me ✉️</a>
+        <button class="btn bg2" data-page="pricing">See Pricing</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="ag">
+        <div class="aiv rev">
+          <div class="gl aimg" style="border-radius:24px;overflow:hidden;padding:0">
+            <img src="images/profile.jpg" alt="Ashwin" style="width:100%;height:100%;object-fit:cover;border-radius:24px;display:block">
+          </div>
+          <div class="astats">
+            <div class="gl stat rev d1"><div class="stn">2+</div><div class="stl">Projects Live</div></div>
+            <div class="gl stat rev d2"><div class="stn">100%</div><div class="stl">Happy Clients</div></div>
+            <div class="gl stat rev d3"><div class="stn">48h</div><div class="stl">Response</div></div>
+            <div class="gl stat rev d4"><div class="stn">∞</div><div class="stl">Creativity</div></div>
+          </div>
+        </div>
+        <div class="at rev d2">
+          <div class="slabel">About Me</div>
+          <h2>Developer who turns ideas into <span class="grad">stunning websites.</span></h2>
+          <p>Hey, I'm Ashwin — a passionate web developer based in India. I love taking raw ideas and building them into fast, polished websites that help people grow.</p>
+          <p>Every project gets my full creative energy. From clean code to pixel-perfect design — I'm all in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="wrap">
+      <div class="slabel rev">How It Works</div>
+      <h2 class="stitle rev d1">Simple 3-step process.</h2>
+      <p class="ssub rev d2">From your idea to a live website — here's exactly what happens.</p>
+      <div class="proc-grid">
+        <div class="gl proc-card rev d1">
+          <div class="proc-num">01</div>
+          <div class="proc-icon">💬</div>
+          <h3>Brief</h3>
+          <p>You tell me about your project, goals, and style. I ask the right questions to understand exactly what you need.</p>
+        </div>
+        <div class="gl proc-card rev d2">
+          <div class="proc-num">02</div>
+          <div class="proc-icon">🎨</div>
+          <h3>Design & Build</h3>
+          <p>I design and develop your website with clean code, animations, and mobile responsiveness fully baked in.</p>
+        </div>
+        <div class="gl proc-card rev d3">
+          <div class="proc-num">03</div>
+          <div class="proc-icon">🚀</div>
+          <h3>Deliver & Launch</h3>
+          <p>You review, we refine, then I deploy your site live. Ready for the world to see.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="slabel rev">My Skills</div>
+      <h2 class="stitle rev d1">Tools of my trade.</h2>
+      <p class="ssub rev d2">Technologies I use to bring great ideas to life.</p>
+      <div class="skg">
+        <div class="gl skc rev d1"><div class="skie">🌐</div><div class="skn">HTML5</div><div class="skl">Expert</div></div>
+        <div class="gl skc rev d2"><div class="skie">🎨</div><div class="skn">CSS3</div><div class="skl">Expert</div></div>
+        <div class="gl skc rev d3"><div class="skie">⚡</div><div class="skn">JavaScript</div><div class="skl">Intermediate</div></div>
+        <div class="gl skc rev d1"><div class="skie">📱</div><div class="skn">Responsive</div><div class="skl">Expert</div></div>
+        <div class="gl skc rev d2"><div class="skie">✨</div><div class="skn">Animations</div><div class="skl">Expert</div></div>
+        <div class="gl skc rev d3"><div class="skie">🎯</div><div class="skn">UI / UX</div><div class="skl">Intermediate</div></div>
+        <div class="gl skc rev d1"><div class="skie">🚀</div><div class="skn">Netlify</div><div class="skl">Proficient</div></div>
+        <div class="gl skc rev d2"><div class="skie">⚙️</div><div class="skn">Performance</div><div class="skl">Proficient</div></div>
+        <div class="gl skc rev d3"><div class="skie">🔧</div><div class="skn">Git</div><div class="skl">Learning</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="slabel rev">My Work</div>
+      <h2 class="stitle rev d1">Projects I've built.</h2>
+      <p class="ssub rev d2">Real websites, real results. Each crafted with care and clean code.</p>
+      <div class="pg">
+        <div class="gl pc rev d1">
+          <div class="pt" style="padding:0;overflow:hidden">
+            <img src="images/aanchal.jpg" alt="Aanchal Creates" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block">
+          </div>
+          <div class="pb2">
+            <div class="ptags"><span class="ptag">Portfolio</span><span class="ptag">Creator</span></div>
+            <h3>Aanchal Creates</h3>
+            <p>Full portfolio for a thumbnail strategist with 75K+ community. Animated sections, case studies, and contact form.</p>
+            <a href="https://aanchalcreates.netlify.app/" target="_blank" rel="noopener noreferrer" class="pl">View Live →</a>
+          </div>
+        </div>
+        <div class="gl pc rev d2">
+          <div class="pt" style="padding:0;overflow:hidden">
+            <img src="images/ashwin.jpg" alt="Ashwin Portfolio" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block">
+          </div>
+          <div class="pb2">
+            <div class="ptags"><span class="ptag">Portfolio</span><span class="ptag">Designer</span></div>
+            <h3>Ashwin – Designer Portfolio</h3>
+            <p>Sleek single-page portfolio for a graphic & thumbnail designer. Built for maximum impact and conversion.</p>
+            <a href="https://ashwinsample.netlify.app/" target="_blank" rel="noopener noreferrer" class="pl">View Live →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="background:rgba(124,58,237,.025)">
+    <div class="wrap" style="text-align:center">
+      <div class="slabel rev" style="justify-content:center">Contact</div>
+      <h2 class="stitle rev d1">Let's work together.</h2>
+      <p class="ssub rev d2" style="margin:0 auto 2.5rem">All fields are required. I reply within 24 hours.</p>
+      <div class="cw">
+        <div class="gl fglass rev d3">
+
+          <!-- Full Name -->
+          <div class="fg">
+            <label>Full Name *</label>
+            <input id="fn" type="text" placeholder="Your name" required>
+          </div>
+
+          <!-- Contact Method Toggle -->
+          <div class="fg">
+            <label>Contact Method *</label>
+            <div class="contact-toggle">
+              <button type="button" class="ctog active" id="tog-email" onclick="switchContact('email')">✉️ Email</button>
+              <button type="button" class="ctog" id="tog-wa" onclick="switchContact('wa')">📱 WhatsApp</button>
+            </div>
+          </div>
+
+          <!-- Email Fields -->
+          <div id="contact-email-fields">
+            <div class="fg">
+              <label>Email Address *</label>
+              <input id="fe" type="email" placeholder="your@email.com" autocomplete="email">
+              <span id="email-msg" style="font-size:.72rem;margin-top:.35rem;display:block;min-height:1rem"></span>
+            </div>
+            <div class="fg">
+              <label>Confirm Email *</label>
+              <input id="fe2" type="email" placeholder="Re-enter your email" autocomplete="off">
+              <span id="email-msg2" style="font-size:.72rem;margin-top:.35rem;display:block;min-height:1rem"></span>
+            </div>
+          </div>
+
+          <!-- WhatsApp Fields -->
+          <div id="contact-wa-fields" style="display:none">
+            <div class="fg">
+              <label>WhatsApp Number *</label>
+              <div style="display:flex;gap:.5rem;align-items:center">
+  <select id="fwa-code" style="display:block">
+    <option value="91">🇮🇳 +91</option>
+    <option value="1">🇺🇸 +1</option>
+    <option value="44">🇬🇧 +44</option>
+    <option value="61">🇦🇺 +61</option>
+    <option value="1">🇨🇦 +1</option>
+    <option value="971">🇦🇪 +971</option>
+    <option value="966">🇸🇦 +966</option>
+    <option value="65">🇸🇬 +65</option>
+    <option value="60">🇲🇾 +60</option>
+    <option value="92">🇵🇰 +92</option>
+    <option value="880">🇧🇩 +880</option>
+    <option value="94">🇱🇰 +94</option>
+    <option value="977">🇳🇵 +977</option>
+    <option value="49">🇩🇪 +49</option>
+    <option value="33">🇫🇷 +33</option>
+    <option value="39">🇮🇹 +39</option>
+    <option value="34">🇪🇸 +34</option>
+    <option value="7">🇷🇺 +7</option>
+    <option value="81">🇯🇵 +81</option>
+    <option value="82">🇰🇷 +82</option>
+    <option value="86">🇨🇳 +86</option>
+    <option value="55">🇧🇷 +55</option>
+    <option value="52">🇲🇽 +52</option>
+    <option value="27">🇿🇦 +27</option>
+    <option value="234">🇳🇬 +234</option>
+    <option value="254">🇰🇪 +254</option>
+    <option value="20">🇪🇬 +20</option>
+    <option value="31">🇳🇱 +31</option>
+    <option value="46">🇸🇪 +46</option>
+    <option value="47">🇳🇴 +47</option>
+    <option value="45">🇩🇰 +45</option>
+  </select>
+  <input id="fwa" type="tel" placeholder="90212 24212" maxlength="15" style="flex:1">
+              </div>
+              <span id="wa-msg" style="font-size:.72rem;margin-top:.35rem;display:block;min-height:1rem"></span>
+            </div>
+            <div class="fg">
+              <label>Confirm WhatsApp Number *</label>
+              <div style="display:flex;gap:.5rem;align-items:center">
+  <select id="fwa2-code" style="display:block">
+    <option value="91">🇮🇳 +91</option>
+    <option value="1">🇺🇸 +1</option>
+    <option value="44">🇬🇧 +44</option>
+    <option value="61">🇦🇺 +61</option>
+    <option value="1">🇨🇦 +1</option>
+    <option value="971">🇦🇪 +971</option>
+    <option value="966">🇸🇦 +966</option>
+    <option value="65">🇸🇬 +65</option>
+    <option value="60">🇲🇾 +60</option>
+    <option value="92">🇵🇰 +92</option>
+    <option value="880">🇧🇩 +880</option>
+    <option value="94">🇱🇰 +94</option>
+    <option value="977">🇳🇵 +977</option>
+    <option value="49">🇩🇪 +49</option>
+    <option value="33">🇫🇷 +33</option>
+    <option value="39">🇮🇹 +39</option>
+    <option value="34">🇪🇸 +34</option>
+    <option value="7">🇷🇺 +7</option>
+    <option value="81">🇯🇵 +81</option>
+    <option value="82">🇰🇷 +82</option>
+    <option value="86">🇨🇳 +86</option>
+    <option value="55">🇧🇷 +55</option>
+    <option value="52">🇲🇽 +52</option>
+    <option value="27">🇿🇦 +27</option>
+    <option value="234">🇳🇬 +234</option>
+    <option value="254">🇰🇪 +254</option>
+    <option value="20">🇪🇬 +20</option>
+    <option value="31">🇳🇱 +31</option>
+    <option value="46">🇸🇪 +46</option>
+    <option value="47">🇳🇴 +47</option>
+    <option value="45">🇩🇰 +45</option>
+  </select>
+  <input id="fwa2" type="tel" placeholder="Re-enter number" maxlength="15" style="flex:1">
+              </div>
+              <span id="wa-msg2" style="font-size:.72rem;margin-top:.35rem;display:block;min-height:1rem"></span>
+            </div>
+          </div>
+
+          <!-- Package -->
+          <div class="fg">
+            <label>Package *</label>
+            <select id="fp" required>
+              <option value="">Select a package...</option>
+              <option>Starter — ₹4,999</option>
+              <option>Pro Portfolio — ₹10,999</option>
+              <option>Custom / Not Sure</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div class="fg">
+            <label style="display:flex;justify-content:space-between;align-items:center">
+              Your Message *
+              <span id="charcount" style="font-size:.7rem;color:#b5aace;font-weight:500">0 / 500</span>
+            </label>
+            <textarea id="fm" placeholder="Tell me about your project, goals, and timeline..." required maxlength="500"></textarea>
+          </div>
+
+          <!-- Honeypot -->
+          <input type="text" id="honey" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;pointer-events:none;height:0;width:0">
+
+          <button class="sbtn" id="sbtn" type="button">Send Message 🚀</button>
+          <p class="fnote">You'll receive a confirmation email after submitting. ✅</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /home -->
+
+<!-- PRICING PAGE -->
+<div id="page-pricing" class="page">
+  <section style="padding-top:3.5rem">
+    <div class="wrap">
+      <div class="slabel rev">Pricing</div>
+      <h2 class="stitle rev d1">Simple, transparent pricing.</h2>
+      <p class="ssub rev d2">No hidden fees. Pick the package that fits your project and let's get started.</p>
+      <div class="pgg">
+        <div class="gl prc ft rev d1">
+          <div class="pbadge">⭐ Most Popular</div>
+          <div class="pico">⚡</div>
+          <div class="pnm">Starter</div>
+          <div class="pdsc">Perfect for a clean personal presence online.</div>
+          <div class="pamt">₹4,999</div>
+          <div class="pper">one-time payment</div>
+          <ul class="plist">
+            <li>Up to 2-page website</li>
+            <li>Mobile responsive</li>
+            <li>Contact form</li>
+            <li>Glassmorphism design</li>
+            <li>Basic animations</li>
+            <li>Netlify deployment</li>
+            <li>6-day delivery</li>
+            <li>2 revisions included</li>
+          </ul>
+          <button class="pbtn pp" data-page="home" data-scroll="contact" data-pkg="Starter — ₹4,999">Get Started</button>
+        </div>
+        <div class="gl prc rev d2">
+          <div class="pico">🚀</div>
+          <div class="pnm">Pro Portfolio</div>
+          <div class="pdsc">Best for creators & freelancers who want to stand out.</div>
+          <div class="pamt">₹10,999</div>
+          <div class="pper">one-time payment</div>
+          <ul class="plist">
+            <li>Up to 5-page website</li>
+            <li>Mobile responsive</li>
+            <li>Contact form</li>
+            <li>Glassmorphism / 3D design</li>
+            <li>Projects showcase</li>
+            <li>Testimonials section</li>
+            <li>Netlify deployment</li>
+            <li>12-day delivery</li>
+            <li>4 revisions included</li>
+          </ul>
+          <button class="pbtn po" data-page="home" data-scroll="contact" data-pkg="Pro Portfolio — ₹10,999">Get Started</button>
+        </div>
+      </div>
+
+      <!-- COMPARISON TABLE -->
+      <div class="comp-wrap rev d3">
+        <div class="slabel" style="margin-bottom:1.2rem">Compare Plans</div>
+        <div class="gl comp-table">
+          <div class="comp-row comp-head">
+            <div class="comp-feat">Feature</div>
+            <div class="comp-col">Starter</div>
+            <div class="comp-col comp-pro">Pro</div>
+          </div>
+          <div class="comp-row"><div class="comp-feat">Pages</div><div class="comp-col">2</div><div class="comp-col comp-pro">5</div></div>
+          <div class="comp-row"><div class="comp-feat">Mobile responsive</div><div class="comp-col">✅</div><div class="comp-col comp-pro">✅</div></div>
+          <div class="comp-row"><div class="comp-feat">Contact form</div><div class="comp-col">✅</div><div class="comp-col comp-pro">✅</div></div>
+          <div class="comp-row"><div class="comp-feat">Glassmorphism</div><div class="comp-col">✅</div><div class="comp-col comp-pro">✅</div></div>
+          <div class="comp-row"><div class="comp-feat">Basic animations</div><div class="comp-col">✅</div><div class="comp-col comp-pro">✅</div></div>
+          <div class="comp-row"><div class="comp-feat">Projects showcase</div><div class="comp-col">❌</div><div class="comp-col comp-pro">✅</div></div>
+          <div class="comp-row"><div class="comp-feat">Testimonials</div><div class="comp-col">❌</div><div class="comp-col comp-pro">✅</div></div>
+          <div class="comp-row"><div class="comp-feat">Netlify deploy</div><div class="comp-col">✅</div><div class="comp-col comp-pro">✅</div></div>
+          <div class="comp-row"><div class="comp-feat">Revisions</div><div class="comp-col">2</div><div class="comp-col comp-pro">4</div></div>
+          <div class="comp-row"><div class="comp-feat">Delivery</div><div class="comp-col">6 days</div><div class="comp-col comp-pro">12 days</div></div>
+          <div class="comp-row comp-price-row">
+            <div class="comp-feat">Price</div>
+            <div class="comp-col comp-price">₹4,999</div>
+            <div class="comp-col comp-pro comp-price">₹10,999</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faqw rev d3">
+        <div class="slabel" style="margin-bottom:1.1rem">FAQ</div>
+        <div class="faqit"><p class="faqq">Do you require upfront payment?</p><p class="faqa">Yes, 50% upfront and 50% on delivery.</p></div>
+        <div class="faqit"><p class="faqq">What if I need changes after delivery?</p><p class="faqa">Each plan includes revisions. Extra revisions are ₹499 each.</p></div>
+        <div class="faqit"><p class="faqq">How do we communicate?</p><p class="faqa">Via WhatsApp or email — whatever suits you best.</p></div>
+        <div class="faqit"><p class="faqq">Do you offer custom packages?</p><p class="faqa">Yes! Contact me and we'll build a package that fits your exact needs.</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- REVIEWS PAGE -->
+<div id="page-reviews" class="page">
+  <section style="padding-top:3.5rem">
+    <div class="wrap">
+      <div class="slabel rev">Reviews</div>
+      <h2 class="stitle rev d1">What clients say.</h2>
+      <p class="ssub rev d2">Real words from real people I've worked with.</p>
+      <div class="tg" id="reviews-grid">
+        <div class="gl tc rev d1">
+          <div class="review-plan">⚡ Starter Plan</div>
+          <div class="tst">★★★★★</div>
+          <p class="ttx">"Super fast, super creative. Ashwin understood exactly what I needed and delivered way beyond my expectations. Looks amazing on mobile!"</p>
+          <div class="tau"><div class="tav">🚀</div><div><div class="tnm">Ashwin S.</div><div class="trl">Graphic & Thumbnail Designer</div></div></div>
+        </div>
+        <div class="gl tc rev d2">
+          <div class="review-plan">🚀 Pro Plan</div>
+          <div class="tst">★★★★★</div>
+          <p class="ttx">"Not just a developer — a creative partner who genuinely cares. The process was seamless from start to finish. Will definitely work again!"</p>
+          <div class="tau"><div class="tav">💡</div><div><div class="tnm">Happy Client</div><div class="trl">Business Owner</div></div></div>
+        </div>
+        <div class="gl tc rev d3">
+          <div class="review-plan">🚀 Pro Plan</div>
+          <div class="tst">★★★★★</div>
+          <p class="ttx">"I was blown away by the final result. It looked so professional and modern. My clients now take me seriously because of my website!"</p>
+          <div class="tau"><div class="tav">✨</div><div><div class="tnm">Freelance Creator</div><div class="trl">Content Creator · YouTube</div></div></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:3rem" class="rev d4">
+        <p style="font-size:.85rem;color:#7c6b9e;margin-bottom:1rem">Worked with me? Share your experience 🙌</p>
+        <button class="btn bp" id="openReviewBtn">✍️ Give a Review</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- REVIEW MODAL -->
+<div id="reviewModal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(26,11,61,.45);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:1.5rem">
+  <div class="gl" style="width:100%;max-width:520px;border-radius:24px;padding:2.2rem;position:relative;max-height:90vh;overflow-y:auto">
+    <button id="closeReviewBtn" style="position:absolute;top:1rem;right:1rem;background:rgba(124,58,237,.1);border:none;border-radius:8px;width:32px;height:32px;cursor:pointer;font-size:1rem;color:#7c6b9e;display:flex;align-items:center;justify-content:center">✕</button>
+    <div class="slabel" style="margin-bottom:.5rem">Leave a Review</div>
+    <h3 style="font-size:1.2rem;font-weight:800;letter-spacing:-.03em;margin-bottom:.3rem">Share your experience</h3>
+    <p style="font-size:.8rem;color:#7c6b9e;margin-bottom:1.5rem">Only available for verified clients. Enter the contact you used in the form.</p>
+
+    <!-- Verification Toggle -->
+    <div class="fg">
+      <label>How did you contact me? *</label>
+      <div class="contact-toggle">
+        <button type="button" class="ctog active" id="rv-tog-email" onclick="switchReviewContact('email')">✉️ Email</button>
+        <button type="button" class="ctog" id="rv-tog-wa" onclick="switchReviewContact('wa')">📱 WhatsApp</button>
+      </div>
+    </div>
+
+    <div id="rv-email-wrap">
+      <div class="fg">
+        <label>Email Address *</label>
+        <input type="email" id="rv-email" placeholder="Enter the email you used to contact me" autocomplete="email">
+        <span id="rv-email-msg" style="font-size:.72rem;margin-top:.35rem;display:block;min-height:1rem"></span>
+      </div>
+    </div>
+
+    <div id="rv-wa-wrap" style="display:none">
+      <div class="fg">
+        <label>WhatsApp Number *</label>
+        <div style="display:flex;gap:.5rem;align-items:center">
+          <span style="background:rgba(124,58,237,.08);border:1px solid rgba(255,255,255,.9);border-radius:11px;padding:.8rem .9rem;font-size:.87rem;font-weight:600;color:#7C3AED;white-space:nowrap">🇮🇳 +91</span>
+          <input id="rv-wa" type="tel" placeholder="98765 43210" maxlength="10" style="flex:1">
+        </div>
+        <span id="rv-wa-msg" style="font-size:.72rem;margin-top:.35rem;display:block;min-height:1rem"></span>
+      </div>
+    </div>
+
+    <!-- Review Fields (shown after verification) -->
+    <div id="rv-fields" style="display:none">
+      <div class="fg"><label>Full Name *</label><input type="text" id="rv-name" placeholder="Your name"></div>
+      <div class="fg">
+        <label>Plan You Purchased *</label>
+        <input type="text" id="rv-plan" placeholder="Auto-filled from your order" readonly style="background:rgba(124,58,237,.06);cursor:not-allowed">
+      </div>
+      <div class="fg"><label>Your Skill / Role *</label><input type="text" id="rv-skill" placeholder="e.g. Graphic Designer, YouTuber, Freelancer"></div>
+      <div class="fg">
+        <label>Rating *</label>
+        <div id="star-row" style="display:flex;gap:.4rem;margin-top:.3rem">
+          <span class="star" data-v="1" style="font-size:1.8rem;cursor:pointer;opacity:.35;transition:opacity .2s">★</span>
+          <span class="star" data-v="2" style="font-size:1.8rem;cursor:pointer;opacity:.35;transition:opacity .2s">★</span>
+          <span class="star" data-v="3" style="font-size:1.8rem;cursor:pointer;opacity:.35;transition:opacity .2s">★</span>
+          <span class="star" data-v="4" style="font-size:1.8rem;cursor:pointer;opacity:.35;transition:opacity .2s">★</span>
+          <span class="star" data-v="5" style="font-size:1.8rem;cursor:pointer;opacity:.35;transition:opacity .2s">★</span>
+        </div>
+        <input type="hidden" id="rv-stars" value="0">
+      </div>
+      <div class="fg">
+        <label style="display:flex;justify-content:space-between">
+          Your Review *
+          <span id="rv-count" style="font-size:.7rem;color:#b5aace;font-weight:500">0 / 1000</span>
+        </label>
+        <textarea id="rv-msg" placeholder="Tell others about your experience working with Ashwin..." maxlength="1000" style="min-height:110px"></textarea>
+      </div>
+      <button class="sbtn" id="rv-submit" type="button">Submit Review 🌟</button>
+      <p style="font-size:.72rem;color:#7c6b9e;margin-top:.75rem;text-align:center">Your review will be verified before publishing.</p>
+    </div>
+  </div>
+</div>
+
+<!-- WhatsApp Button (outside footer) -->
+<a href="https://wa.me/9021224212?text=Hi%20Ashwin%2C%20I%20want%20to%20discuss%20a%20project!" target="_blank" rel="noopener noreferrer" id="wabtn" title="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" height="28" fill="white">
+    <path d="M16 2C8.28 2 2 8.28 2 16c0 2.46.66 4.76 1.8 6.74L2 30l7.5-1.76A13.93 13.93 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm0 25.5a11.5 11.5 0 01-5.86-1.6l-.42-.25-4.35 1.02.96-4.24-.27-.44A11.47 11.47 0 014.5 16C4.5 9.6 9.6 4.5 16 4.5S27.5 9.6 27.5 16 22.4 27.5 16 27.5zm6.3-8.44c-.34-.17-2.02-.99-2.33-1.1-.31-.12-.54-.17-.77.17-.23.34-.88 1.1-1.08 1.33-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.01-.9-1.7-2.02-1.9-2.36-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.56-.58-.77-.59h-.66c-.23 0-.6.09-.91.43-.31.34-1.2 1.17-1.2 2.86s1.23 3.32 1.4 3.55c.17.23 2.42 3.69 5.86 5.17.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.02-.82 2.31-1.62.28-.8.28-1.48.2-1.62-.09-.14-.31-.23-.65-.4z"/>
+  </svg>
+</a>
+
+<footer>
+  <span class="fl">Ashwin <span>Dev</span></span>
+  <p id="copyemail" title="Click to copy" style="cursor:pointer;transition:color .2s">📧 helloepicgrowth@outlook.com</p>
+  <p style="margin-top:.3rem">© 2026 Ashwin. All rights reserved. Built with ♥ in India.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
